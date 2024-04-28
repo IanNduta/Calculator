@@ -12,58 +12,34 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+        <h1>Calculator</h1>
     </header>
 
     <main>
         <div class="container"> </div>
         <div class="row">
             <div class="col">
-                <h1>Hello, world!</h1>
+                <div>
+                    <label for="number1Field">Number 1</label>
+                    <input type="text" id="number1Field" >
+                </div>
+                <div>
+                    <label for="number2Field">Number 2</label>
+                    <input type="text" id="number2Field" >
+                </div>
+                <div>
+                    <input type="button" id="addBtn"value="Add" >
+                    <input type="button" id="subtractBtn" value="Subtract" >
+                    <input type="button" id="multiplyBtn" value="Multiply">
+                    <input type="button" id="divideBtn" value="Divide" >
+                </div>
+                <div>
+                    <label for="answerField">Answer:</label>
+                    <input id="answerField" type="text" value="anwser" readonly> 
+                    
+                </div>
             </div>
         </div>
-
-        <div class="container"> </div>
-        <div class="row">
-            <div class="col">
-                <h1>Hello, world!</h1>
-            </div>
-        </div>
-    </main>
 
 
     <footer>
@@ -74,6 +50,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="scripts/site.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
